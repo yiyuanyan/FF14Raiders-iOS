@@ -1,0 +1,52 @@
+//
+//  PrefixHeader.pch
+//  FF14Raiders
+//
+//  Created by 何建新 on 2017/11/14.
+//  Copyright © 2017年 何建新. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
+
+/*第三方*/
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "Masonry.h"
+#import "MBProgressHUD+Extension.h"
+#import "NSObject+YYModel.h"
+#import "UIImageView+WebCache.h"
+
+
+
+/*BASE*/
+#import "AppInformation.h"
+#import "AppUIInformation.h"
+#import "BaseViewController.h"
+#import <AFNetworking/AFNetworking.h>
+#import <SDWebImage/SDWebImageCompat.h>
+#import "BaseNavigationController.h"
+
+#import "XCNormalHeader.h"
+#import "XCNormalFooter.h"
+
+
+/*分类*/
+#import "UIView+Layout.h"
+#import "NSArray+SafeExtension.h"
+#import "UIButton+XCHelperBlock.h"
+#import "UIView+XCCornerRadius.h"
+#import "NSString+XCHelper.h"
+#import "UIView+XCHelper.h"
+#import "UIAlertController+Color.h"
+
+
+
+static NSString * const xc_returnCode = @"result";
+static NSString * const xc_returnMsg = @"msg";
+static NSString * const xc_message = @"msg";
+static NSString * const xc_alert_message = @"网络不给力，请稍后再试";
+
+#endif /* PrefixHeader_pch */
