@@ -9,7 +9,10 @@
 #import "BaseTabBarController.h"
 //#import "CrusadeViewController.h"
 #import "BaseNavigationController.h"
-//#import "DungeonsViewController.h"
+#import "DungeonViewController.h"
+#import "ProductionController.h"
+#import "OccupationController.h"
+#import "AnnihilationController.h"
 //#import "OccupationViewController.h"
 //#import "ProductionViewController.h"
 @interface BaseTabBarController ()
@@ -22,7 +25,7 @@
     [super viewDidLoad];
     self.tabBarController.tabBar.delegate = self;
     UIView *view = [[UIView alloc] init];
-    view.backgroundColor = UICOLOR_FROM_HEX(0x303030);
+    view.backgroundColor = UICOLOR_FROM_HEX(0x272627);
     view.frame = self.tabBar.bounds;
     [[UITabBar appearance] insertSubview:view atIndex:0];
     //self.tabBar.tintColor = UICOLOR_FROM_HEX(0x303030);
@@ -34,10 +37,11 @@
 }
 
 - (void)setupChildControllers {
-//    [self setupChildNavigationControllerWithClass:[BaseNavigationController class] tabbarImageName:@"jianmiezhan-2" rootViewControllerClass:[CrusadeViewController class] tabbarTitle:@"讨伐&歼灭"];
-//    [self setupChildNavigationControllerWithClass:[BaseNavigationController class] tabbarImageName:@"fubengonglue" rootViewControllerClass:[DungeonsViewController class] tabbarTitle:@"副本攻略"];
-//    [self setupChildNavigationControllerWithClass:[BaseNavigationController class] tabbarImageName:@"zhandouzhiye" rootViewControllerClass:[OccupationViewController class] tabbarTitle:@"战斗职业"];
-//    [self setupChildNavigationControllerWithClass:[BaseNavigationController class] tabbarImageName:@"shengchanzhiye" rootViewControllerClass:[ProductionViewController class] tabbarTitle:@"生产职业"];
+    [self setupChildNavigationControllerWithClass:[BaseNavigationController class] tabbarImageName:@"dungeon" rootViewControllerClass:[DungeonViewController class] tabbarTitle:@"副本攻略"];
+    [self setupChildNavigationControllerWithClass:[BaseNavigationController class] tabbarImageName:@"taofa" rootViewControllerClass:[AnnihilationController class] tabbarTitle:@"讨伐&歼灭"];
+    
+    [self setupChildNavigationControllerWithClass:[BaseNavigationController class] tabbarImageName:@"zhiye" rootViewControllerClass:[OccupationController class] tabbarTitle:@"战斗职业"];
+    [self setupChildNavigationControllerWithClass:[BaseNavigationController class] tabbarImageName:@"caiji" rootViewControllerClass:[ProductionController class] tabbarTitle:@"生产职业"];
     
     
 }
