@@ -10,4 +10,6 @@
 #import "DungeonContentModel.h"
 @interface DungeonContentView : UIView
 @property(nonatomic, strong) DungeonContentModel *model;
+//允许解除人数限制
+@property(nonatomic, strong) UILabel *numberRestrictionLabel;
 @end

@@ -48,7 +48,7 @@
 -(void)getJSON{
     
     self.tableView.hidden = YES;
-    NSString *url = [NSString stringWithFormat:@"%@api.php/api/getjson/get_dungeonall",APP_URL];
+    NSString *url = [NSString stringWithFormat:@"%@/api/getdungeonall",APP_URL];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
@@ -61,7 +61,8 @@
                 [mArray addObject:model];
             }
             self.dataSource = mArray;
-            NSURL *topImageURL = [NSURL URLWithString:responseObject[@"image"]];
+            NSString *url = [NSString stringWithFormat:@"%@uploads/%@",APP_URL,responseObject[@"category"][@"image"]];
+            NSURL *topImageURL = [NSURL URLWithString:url];
             [self.topImageView sd_setImageWithURL:topImageURL completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
                 
             }];

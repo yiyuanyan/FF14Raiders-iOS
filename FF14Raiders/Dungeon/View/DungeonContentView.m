@@ -31,8 +31,7 @@
 @property(nonatomic, strong) UILabel *gradeLabel;
 //允许中途加入
 @property(nonatomic, strong) UILabel *addUserLabel;
-//允许解除人数限制
-@property(nonatomic, strong) UILabel *numberRestrictionLabel;
+
 @end
 @implementation DungeonContentView
 
@@ -40,6 +39,7 @@
 {
     self = [super initWithFrame:frame];
     if(self){
+        
         [self initWithView];
     }
     return self;
@@ -366,6 +366,8 @@
     }else{
         self.numberRestrictionLabel.text = @"否";
     }
+    
+    
     
 }
 @end

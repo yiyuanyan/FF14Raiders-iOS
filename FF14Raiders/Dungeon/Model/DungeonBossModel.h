@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface DungeonBossModel : NSObject
-
+@property(nonatomic, assign) int id;
+@property(nonatomic, strong) NSString *name;
+@property(nonatomic, strong) NSString *affiliation;
+@property(nonatomic, strong) NSString *content;
+@property(nonatomic, strong) NSArray *drop_items;
+@property(nonatomic, strong) NSString *image;
+@property(nonatomic, strong) NSArray *items;
 @end
