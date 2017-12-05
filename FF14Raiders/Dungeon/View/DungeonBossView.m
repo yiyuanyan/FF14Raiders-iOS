@@ -109,7 +109,7 @@
         itemsBtn.tag = i;
         
         [itemsBtn addTarget:self action:@selector(itemsBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [itemsBtn setTitle:@"查看物品掉落" forState:UIControlStateNormal];
+        
         [itemsBtn setTitleColor:UICOLOR_FROM_HEX(0xbbac94) forState:UIControlStateNormal];
         [itemsBtn setImage:[UIImage imageNamed:@"items_btn"] forState:UIControlStateNormal];
         [self.backView addSubview:itemsBtn];
@@ -147,7 +147,7 @@
     if(_modelArray == nil){
         _modelArray = modelArray;
     }
-    [self initWithView:modelArray.count models:modelArray];
+    [self initWithView:(int)modelArray.count models:modelArray];
 }
 -(void)itemsBtnClick:(UIButton *)sender
 {

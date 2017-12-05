@@ -28,8 +28,8 @@
 		3501EB9F1FBAC56600489919 /* UIAlertController+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501EB851FBAC56600489919 /* UIAlertController+Color.m */; };
 		3501EBA01FBAC56600489919 /* UITableView+XCPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501EB8B1FBAC56600489919 /* UITableView+XCPlaceholderView.m */; };
 		3501EBA11FBAC56600489919 /* NSObject+XCMethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501EB8C1FBAC56600489919 /* NSObject+XCMethodSwizzle.m */; };
-		352315E71FCE8CAC005CF670 /* ItemsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 352315E61FCE8CAC005CF670 /* ItemsCollectionViewCell.m */; };
-		352315EA1FCEC75E005CF670 /* ItemsCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352315E91FCEC75E005CF670 /* ItemsCollectionController.m */; };
+		351EF0971FD0EAD100A1404D /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351EF0961FD0EAD100A1404D /* ItemViewController.m */; };
+		351EF09A1FD0F8F800A1404D /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 351EF0991FD0F8F800A1404D /* ItemView.m */; };
 		3533194C1FC2BA350089487F /* DungeonContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533194B1FC2BA350089487F /* DungeonContentModel.m */; };
 		3533194F1FC2BAB70089487F /* DungeonContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533194E1FC2BAB70089487F /* DungeonContentView.m */; };
 		3553C1571FBC428D00A3BEA8 /* DungeonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553C1561FBC428D00A3BEA8 /* DungeonTableViewCell.m */; };
@@ -44,6 +44,9 @@
 		3588D12A1FC9B37D0084F71B /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3588D1291FC9B37D0084F71B /* BaseNetworking.m */; };
 		35A382EC1FC5056100246AB3 /* DungeonBossModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A382EB1FC5056100246AB3 /* DungeonBossModel.m */; };
 		35C934061FBD8D9900675D06 /* DungeonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C934051FBD8D9900675D06 /* DungeonModel.m */; };
+		35EE63CF1FCF9D29000A7DBA /* ItemsCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE63CE1FCF9D29000A7DBA /* ItemsCollectionController.m */; };
+		35EE63D21FCF9D41000A7DBA /* ItemsCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE63D11FCF9D41000A7DBA /* ItemsCollectionCell.m */; };
+		35EE63D51FCFCF16000A7DBA /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE63D41FCFCF16000A7DBA /* ItemModel.m */; };
 		35F00E351FBAD21E000B922A /* DungeonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F00E341FBAD21E000B922A /* DungeonViewController.m */; };
 		35F00E441FBAEA4C000B922A /* AnnihilationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F00E431FBAEA4C000B922A /* AnnihilationController.m */; };
 		35F00E471FBAEA5B000B922A /* OccupationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F00E461FBAEA5B000B922A /* OccupationController.m */; };
@@ -114,10 +117,10 @@
 		3501EB8A1FBAC56600489919 /* UIButton+timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+timer.h"; sourceTree = "<group>"; };
 		3501EB8B1FBAC56600489919 /* UITableView+XCPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XCPlaceholderView.m"; sourceTree = "<group>"; };
 		3501EB8C1FBAC56600489919 /* NSObject+XCMethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XCMethodSwizzle.m"; sourceTree = "<group>"; };
-		352315E51FCE8CAC005CF670 /* ItemsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsCollectionViewCell.h; sourceTree = "<group>"; };
-		352315E61FCE8CAC005CF670 /* ItemsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsCollectionViewCell.m; sourceTree = "<group>"; };
-		352315E81FCEC75E005CF670 /* ItemsCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsCollectionController.h; sourceTree = "<group>"; };
-		352315E91FCEC75E005CF670 /* ItemsCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsCollectionController.m; sourceTree = "<group>"; };
+		351EF0951FD0EAD100A1404D /* ItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		351EF0961FD0EAD100A1404D /* ItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+		351EF0981FD0F8F800A1404D /* ItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
+		351EF0991FD0F8F800A1404D /* ItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
 		3533194A1FC2BA350089487F /* DungeonContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonContentModel.h; sourceTree = "<group>"; };
 		3533194B1FC2BA350089487F /* DungeonContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonContentModel.m; sourceTree = "<group>"; };
 		3533194D1FC2BAB70089487F /* DungeonContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonContentView.h; sourceTree = "<group>"; };
@@ -146,6 +149,12 @@
 		35A382EB1FC5056100246AB3 /* DungeonBossModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonBossModel.m; sourceTree = "<group>"; };
 		35C934041FBD8D9900675D06 /* DungeonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonModel.h; sourceTree = "<group>"; };
 		35C934051FBD8D9900675D06 /* DungeonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonModel.m; sourceTree = "<group>"; };
+		35EE63CD1FCF9D29000A7DBA /* ItemsCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsCollectionController.h; sourceTree = "<group>"; };
+		35EE63CE1FCF9D29000A7DBA /* ItemsCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsCollectionController.m; sourceTree = "<group>"; };
+		35EE63D01FCF9D41000A7DBA /* ItemsCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsCollectionCell.h; sourceTree = "<group>"; };
+		35EE63D11FCF9D41000A7DBA /* ItemsCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsCollectionCell.m; sourceTree = "<group>"; };
+		35EE63D31FCFCF16000A7DBA /* ItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		35EE63D41FCFCF16000A7DBA /* ItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
 		35F00E2C1FBACCF9000B922A /* AppInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInformation.h; sourceTree = "<group>"; };
 		35F00E2D1FBACCF9000B922A /* AppUIInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppUIInformation.h; sourceTree = "<group>"; };
 		35F00E2E1FBACD05000B922A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -344,8 +353,10 @@
 				35F00E341FBAD21E000B922A /* DungeonViewController.m */,
 				3553C29A1FBEC824004450B0 /* DungeonContentController.h */,
 				3553C29B1FBEC824004450B0 /* DungeonContentController.m */,
-				352315E81FCEC75E005CF670 /* ItemsCollectionController.h */,
-				352315E91FCEC75E005CF670 /* ItemsCollectionController.m */,
+				35EE63CD1FCF9D29000A7DBA /* ItemsCollectionController.h */,
+				35EE63CE1FCF9D29000A7DBA /* ItemsCollectionController.m */,
+				351EF0951FD0EAD100A1404D /* ItemViewController.h */,
+				351EF0961FD0EAD100A1404D /* ItemViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -359,6 +370,8 @@
 				3533194B1FC2BA350089487F /* DungeonContentModel.m */,
 				35A382EA1FC5056100246AB3 /* DungeonBossModel.h */,
 				35A382EB1FC5056100246AB3 /* DungeonBossModel.m */,
+				35EE63D31FCFCF16000A7DBA /* ItemModel.h */,
+				35EE63D41FCFCF16000A7DBA /* ItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,8 +385,10 @@
 				3533194E1FC2BAB70089487F /* DungeonContentView.m */,
 				35F0815A1FCBC21E00215F6A /* DungeonBossView.h */,
 				35F0815B1FCBC21E00215F6A /* DungeonBossView.m */,
-				352315E51FCE8CAC005CF670 /* ItemsCollectionViewCell.h */,
-				352315E61FCE8CAC005CF670 /* ItemsCollectionViewCell.m */,
+				35EE63D01FCF9D41000A7DBA /* ItemsCollectionCell.h */,
+				35EE63D11FCF9D41000A7DBA /* ItemsCollectionCell.m */,
+				351EF0981FD0F8F800A1404D /* ItemView.h */,
+				351EF0991FD0F8F800A1404D /* ItemView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -815,30 +830,33 @@
 				3564A95A1FBAB2FA00A49800 /* main.m in Sources */,
 				35F0815C1FCBC21E00215F6A /* DungeonBossView.m in Sources */,
 				35F00E4A1FBAEA90000B922A /* ProductionController.m in Sources */,
+				35EE63CF1FCF9D29000A7DBA /* ItemsCollectionController.m in Sources */,
 				35A382EC1FC5056100246AB3 /* DungeonBossModel.m in Sources */,
+				35EE63D51FCFCF16000A7DBA /* ItemModel.m in Sources */,
 				3501EB8E1FBAC56600489919 /* BaseViewController.m in Sources */,
 				3501EB9D1FBAC56600489919 /* UICollectionView+XCPlaceholderView.m in Sources */,
+				35EE63D21FCF9D41000A7DBA /* ItemsCollectionCell.m in Sources */,
 				3501EB971FBAC56600489919 /* UIButton+XCHelperBlock.m in Sources */,
 				3553C1571FBC428D00A3BEA8 /* DungeonTableViewCell.m in Sources */,
 				3501EB9A1FBAC56600489919 /* NSString+XCHelper.m in Sources */,
 				3501EB961FBAC56600489919 /* UIImage+Category.m in Sources */,
 				3501EB901FBAC56600489919 /* XCNormalHeader.m in Sources */,
-				352315E71FCE8CAC005CF670 /* ItemsCollectionViewCell.m in Sources */,
 				3533194C1FC2BA350089487F /* DungeonContentModel.m in Sources */,
 				3501EB981FBAC56600489919 /* UIView+Layout.m in Sources */,
 				35F00E471FBAEA5B000B922A /* OccupationController.m in Sources */,
 				3501EB9C1FBAC56600489919 /* UILabel+XCHelper.m in Sources */,
+				351EF09A1FD0F8F800A1404D /* ItemView.m in Sources */,
 				3501EB8D1FBAC56600489919 /* XCNormalFooter.m in Sources */,
 				3501EB9E1FBAC56600489919 /* UIView+XCHelper.m in Sources */,
 				3501EBA01FBAC56600489919 /* UITableView+XCPlaceholderView.m in Sources */,
 				3501EB921FBAC56600489919 /* BaseTabBarController.m in Sources */,
 				3501EB9B1FBAC56600489919 /* NSArray+SafeExtension.m in Sources */,
-				352315EA1FCEC75E005CF670 /* ItemsCollectionController.m in Sources */,
 				3588D12A1FC9B37D0084F71B /* BaseNetworking.m in Sources */,
 				3501EB941FBAC56600489919 /* FLAnimatedImageView+WebCache.m in Sources */,
 				35F00E351FBAD21E000B922A /* DungeonViewController.m in Sources */,
 				3501EBA11FBAC56600489919 /* NSObject+XCMethodSwizzle.m in Sources */,
 				3501EB951FBAC56600489919 /* UIView+XCCornerRadius.m in Sources */,
+				351EF0971FD0EAD100A1404D /* ItemViewController.m in Sources */,
 				35C934061FBD8D9900675D06 /* DungeonModel.m in Sources */,
 				3564A94C1FBAB2FA00A49800 /* AppDelegate.m in Sources */,
 				3501EB991FBAC56600489919 /* UIButton+timer.m in Sources */,

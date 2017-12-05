@@ -25,6 +25,7 @@
 
 @implementation DungeonContentController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UICOLOR_FROM_HEX(0x313131);
@@ -53,6 +54,7 @@
 }
 
 -(void)getJSON{
+    [MBProgressHUD showLoading:self.view];
     NSString *url = [NSString stringWithFormat:@"%@/api/getdungeon/%d",APP_URL,self.id];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -67,15 +69,15 @@
             
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        [MBProgressHUD showMessage:@"网络不给力..." toView:self.view];
     }];
 }
 
 -(void)getDungeonBoss:(NSString *)dungeon{
     
     NSString *url = [NSString stringWithFormat:@"%@api/getdungeonboss/%@",APP_URL,dungeon];
+    //URL编码
     NSString *path = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    NSLog(@"%@",path);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:path parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
@@ -94,6 +96,10 @@
     }];
 }
 -(void) goToBack{
+    self.navigationController.navigationBar.hidden = YES;
+    //返回上一级会显示状态栏高，这里将本级的状态栏也设置为透明。
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    statusBar.backgroundColor = [UIColor clearColor];
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void) initWithContentView{
@@ -135,12 +141,21 @@
     __weak typeof (self) weakself = self;
     self.bossView.buttonAction = ^(UIButton *sender) {
         NSLog(@"block已经响应了");
-        ItemsCollectionController *itemController = [ItemsCollectionController new];
-        [weakself.navigationController pushViewController:itemController animated:YES];
+        [weakself pushToNewPage:sender];
     };
+    [MBProgressHUD hideHUDForView:self.view];
     //self.scrollView.contentSize = CGSizeMake(0, self.bossView.frame.origin.y+self.bossView.frame.size.height);
 }
-
+-(void)pushToNewPage:(UIButton *)sender
+{
+    DungeonBossModel *model = self.bossModels[sender.tag];
+    NSLog(@"%@",model.name);
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    ItemsCollectionController *vc = [[ItemsCollectionController alloc] initWithCollectionViewLayout:flowLayout];
+    vc.name = model.name;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

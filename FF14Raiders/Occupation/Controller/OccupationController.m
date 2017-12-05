@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [MBProgressHUD showLoading:self.view title:@"正在获取网络..."];
     self.view.backgroundColor = UICOLOR_RANDOM_COLOR();
     // Do any additional setup after loading the view.
 }

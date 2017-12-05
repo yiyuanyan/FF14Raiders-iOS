@@ -1,5 +1,5 @@
 //
-//  ItemsCollectionController.h
+//  ItemsCollectionCell.h
 //  FF14Raiders
 //
 //  Created by 何建新 on 2017/11/30.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ItemsCollectionController : UICollectionViewController
-@property(nonatomic, strong) NSString *name;
+#import "ItemModel.h"
+@interface ItemsCollectionCell : UICollectionViewCell
+@property(nonatomic, strong) ItemModel *model;
 @end

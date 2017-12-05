@@ -18,11 +18,12 @@
 
 @implementation DungeonViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [MBProgressHUD showLoading:self.view];
-    [self getJSON];
     
+    [self getJSON];
     self.topImageView = [[UIImageView alloc] init];
     [self.view addSubview:self.topImageView];
     [self.topImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -43,6 +44,8 @@
     }];
     self.view.backgroundColor = UICOLOR_FROM_HEX(0x313131);
     self.tableView.backgroundColor = UICOLOR_FROM_HEX(0x313131);
+    [MBProgressHUD showLoading:self.view];
+    [self.topImageView layoutIfNeeded];
     
 }
 -(void)getJSON{
@@ -66,6 +69,7 @@
             [self.topImageView sd_setImageWithURL:topImageURL completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
                 
             }];
+            [MBProgressHUD hideHUDForView:self.view];
             [self.tableView reloadData];
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -100,6 +104,7 @@
     DungeonModel *model = self.dataSource[indexPath.row];
     vc.id = model.id;
     vc.navTitle = model.name;
+    self.navigationController.navigationBar.hidden = NO;
     [self.navigationController pushViewController:vc animated:YES];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
