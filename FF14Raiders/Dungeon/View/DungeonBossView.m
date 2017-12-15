@@ -77,7 +77,7 @@
         }];
         
         //图片
-        NSURL *imgPath = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",APP_URL,m.image]];
+        NSURL *imgPath = [NSURL URLWithString:[NSString stringWithFormat:@"%@public%@",APP_URL,m.image]];
         UIImageView *imageView = [[UIImageView alloc] init];
         [imageView sd_setImageWithURL:imgPath];
         [self.backView addSubview:imageView];

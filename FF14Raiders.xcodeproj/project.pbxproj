@@ -55,6 +55,9 @@
 		46A4B32BE02132855686E811 /* Pods_FF14RaidersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D628D661A378CBB6AA2B3FC /* Pods_FF14RaidersTests.framework */; };
 		79BA8EC48E336305336EFD24 /* Pods_FF14RaidersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB52EB1D0F563D42E000CF1 /* Pods_FF14RaidersUITests.framework */; };
 		B56CCBD286CB202C7ED456FE /* Pods_FF14Raiders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299E0467445F31454780B01 /* Pods_FF14Raiders.framework */; };
+		B75540D81FE3757400D36269 /* AnnihilationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B75540D71FE3757400D36269 /* AnnihilationCell.m */; };
+		B75540DB1FE37C1600D36269 /* AnnihilationCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B75540DA1FE37C1600D36269 /* AnnihilationCellModel.m */; };
+		B75540DE1FE3A98400D36269 /* AnnihilationContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75540DD1FE3A98400D36269 /* AnnihilationContentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +176,12 @@
 		5EB52EB1D0F563D42E000CF1 /* Pods_FF14RaidersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FF14RaidersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFF6822537B4B4D2733E27B /* Pods-FF14RaidersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF14RaidersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF14RaidersUITests/Pods-FF14RaidersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D628D661A378CBB6AA2B3FC /* Pods_FF14RaidersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FF14RaidersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75540D61FE3757400D36269 /* AnnihilationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnihilationCell.h; sourceTree = "<group>"; };
+		B75540D71FE3757400D36269 /* AnnihilationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnihilationCell.m; sourceTree = "<group>"; };
+		B75540D91FE37C1600D36269 /* AnnihilationCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnihilationCellModel.h; sourceTree = "<group>"; };
+		B75540DA1FE37C1600D36269 /* AnnihilationCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnihilationCellModel.m; sourceTree = "<group>"; };
+		B75540DC1FE3A98400D36269 /* AnnihilationContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnihilationContentController.h; sourceTree = "<group>"; };
+		B75540DD1FE3A98400D36269 /* AnnihilationContentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnihilationContentController.m; sourceTree = "<group>"; };
 		C37F31C6883F7E6D6D854D8C /* Pods-FF14Raiders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF14Raiders.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF14Raiders/Pods-FF14Raiders.release.xcconfig"; sourceTree = "<group>"; };
 		CB275DF7CE5B9C1A618A81EC /* Pods-FF14RaidersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF14RaidersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF14RaidersTests/Pods-FF14RaidersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D49A8DED29F12ECF23C460C0 /* Pods-FF14RaidersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF14RaidersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF14RaidersUITests/Pods-FF14RaidersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -397,8 +406,8 @@
 			isa = PBXGroup;
 			children = (
 				35F00E371FBAE6B3000B922A /* Controller */,
-				35F00E381FBAE6B3000B922A /* Model */,
-				35F00E391FBAE6B3000B922A /* View */,
+				B75540D41FE3754D00D36269 /* Model */,
+				B75540D51FE3754D00D36269 /* View */,
 			);
 			path = Annihilation;
 			sourceTree = "<group>";
@@ -408,22 +417,10 @@
 			children = (
 				35F00E421FBAEA4C000B922A /* AnnihilationController.h */,
 				35F00E431FBAEA4C000B922A /* AnnihilationController.m */,
+				B75540DC1FE3A98400D36269 /* AnnihilationContentController.h */,
+				B75540DD1FE3A98400D36269 /* AnnihilationContentController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		35F00E381FBAE6B3000B922A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		35F00E391FBAE6B3000B922A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		35F00E3A1FBAE6B3000B922A /* Occupation */ = {
@@ -488,6 +485,24 @@
 		35F00E411FBAE6B3000B922A /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B75540D41FE3754D00D36269 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B75540D91FE37C1600D36269 /* AnnihilationCellModel.h */,
+				B75540DA1FE37C1600D36269 /* AnnihilationCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B75540D51FE3754D00D36269 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B75540D61FE3757400D36269 /* AnnihilationCell.h */,
+				B75540D71FE3757400D36269 /* AnnihilationCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -833,8 +848,10 @@
 				35EE63CF1FCF9D29000A7DBA /* ItemsCollectionController.m in Sources */,
 				35A382EC1FC5056100246AB3 /* DungeonBossModel.m in Sources */,
 				35EE63D51FCFCF16000A7DBA /* ItemModel.m in Sources */,
+				B75540DB1FE37C1600D36269 /* AnnihilationCellModel.m in Sources */,
 				3501EB8E1FBAC56600489919 /* BaseViewController.m in Sources */,
 				3501EB9D1FBAC56600489919 /* UICollectionView+XCPlaceholderView.m in Sources */,
+				B75540D81FE3757400D36269 /* AnnihilationCell.m in Sources */,
 				35EE63D21FCF9D41000A7DBA /* ItemsCollectionCell.m in Sources */,
 				3501EB971FBAC56600489919 /* UIButton+XCHelperBlock.m in Sources */,
 				3553C1571FBC428D00A3BEA8 /* DungeonTableViewCell.m in Sources */,
@@ -861,6 +878,7 @@
 				3564A94C1FBAB2FA00A49800 /* AppDelegate.m in Sources */,
 				3501EB991FBAC56600489919 /* UIButton+timer.m in Sources */,
 				35F00E441FBAEA4C000B922A /* AnnihilationController.m in Sources */,
+				B75540DE1FE3A98400D36269 /* AnnihilationContentController.m in Sources */,
 				3501EB911FBAC56600489919 /* MBProgressHUD+Extension.m in Sources */,
 				3501EB8F1FBAC56600489919 /* BaseNavigationController.m in Sources */,
 			);

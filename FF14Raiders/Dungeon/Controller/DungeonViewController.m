@@ -35,7 +35,8 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 0) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.separatorStyle = UIAccessibilityTraitNone;
+    self.tableView.separatorStyle = UITableViewCellAccessoryNone;
+    //self.tableView.separatorStyle = UIAccessibilityTraitNone;
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.topImageView.mas_bottom).offset(0);
@@ -51,7 +52,8 @@
 -(void)getJSON{
     
     self.tableView.hidden = YES;
-    NSString *url = [NSString stringWithFormat:@"%@/api/getdungeonall",APP_URL];
+    NSString *url = [NSString stringWithFormat:@"%@api/getdungeonall",APP_URL];
+    NSLog(@"%@",url);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
@@ -64,7 +66,7 @@
                 [mArray addObject:model];
             }
             self.dataSource = mArray;
-            NSString *url = [NSString stringWithFormat:@"%@uploads/%@",APP_URL,responseObject[@"category"][@"image"]];
+            NSString *url = [NSString stringWithFormat:@"%@public/uploads/%@",APP_URL,responseObject[@"category"][@"image"]];
             NSURL *topImageURL = [NSURL URLWithString:url];
             [self.topImageView sd_setImageWithURL:topImageURL completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
                 
@@ -109,7 +111,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 65;
+    return LineH(65);
 }
 
 @end

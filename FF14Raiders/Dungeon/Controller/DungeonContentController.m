@@ -76,6 +76,7 @@
 -(void)getDungeonBoss:(NSString *)dungeon{
     
     NSString *url = [NSString stringWithFormat:@"%@api/getdungeonboss/%@",APP_URL,dungeon];
+    
     //URL编码
     NSString *path = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -140,7 +141,6 @@
     }];
     __weak typeof (self) weakself = self;
     self.bossView.buttonAction = ^(UIButton *sender) {
-        NSLog(@"block已经响应了");
         [weakself pushToNewPage:sender];
     };
     [MBProgressHUD hideHUDForView:self.view];
