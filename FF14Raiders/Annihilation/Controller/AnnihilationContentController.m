@@ -7,9 +7,10 @@
 //
 
 #import "AnnihilationContentController.h"
-
+#import "AnnihilationModel.h"
+#import "AnnihilationView.h"
 @interface AnnihilationContentController ()
-
+@property(nonatomic, strong) NSArray *modelArray;
 @end
 
 @implementation AnnihilationContentController
@@ -21,15 +22,34 @@
     [self getJSON];
 }
 -(void)getJSON{
+    [MBProgressHUD showLoading:self.view];
     NSString *url = [NSString stringWithFormat:@"%@api/getcrusadeon/%d",APP_URL,self.id];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@",responseObject);
+        NSMutableArray *mArray = [NSMutableArray array];
+        if([responseObject[@"status"] integerValue] == 1){
+            AnnihilationModel *model = [AnnihilationModel yy_modelWithJSON:responseObject[@"data"]];
+            [mArray addObject:model];
+        }
+        self.modelArray = mArray;
+        [MBProgressHUD hideHUDForView:self.view];
+        [self initView];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        [MBProgressHUD showMessage:@"网络不给力...." toView:self.view];
     }];
+}
+-(void)initView{
+    AnnihilationView *AnView = [[AnnihilationView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH(), SCREEN_HEIGHT())];
+    AnnihilationModel *m = self.modelArray[0];
+    AnView.model = m;
+    [self.view addSubview:AnView];
+    [AnView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.top.equalTo(self.view).with.offset(64);
+    }];
+    
 }
 -(void)setNavigation{
     self.title = self.name;

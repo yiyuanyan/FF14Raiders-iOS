@@ -32,6 +32,8 @@
 		351EF09A1FD0F8F800A1404D /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 351EF0991FD0F8F800A1404D /* ItemView.m */; };
 		3533194C1FC2BA350089487F /* DungeonContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533194B1FC2BA350089487F /* DungeonContentModel.m */; };
 		3533194F1FC2BAB70089487F /* DungeonContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533194E1FC2BAB70089487F /* DungeonContentView.m */; };
+		353FF9751FE7CD2700A517F7 /* AnnihilationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353FF9741FE7CD2700A517F7 /* AnnihilationModel.m */; };
+		353FF9781FE7E43A00A517F7 /* AnnihilationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353FF9771FE7E43A00A517F7 /* AnnihilationView.m */; };
 		3553C1571FBC428D00A3BEA8 /* DungeonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553C1561FBC428D00A3BEA8 /* DungeonTableViewCell.m */; };
 		3553C29C1FBEC824004450B0 /* DungeonContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553C29B1FBEC824004450B0 /* DungeonContentController.m */; };
 		3564A94C1FBAB2FA00A49800 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3564A94B1FBAB2FA00A49800 /* AppDelegate.m */; };
@@ -128,6 +130,10 @@
 		3533194B1FC2BA350089487F /* DungeonContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonContentModel.m; sourceTree = "<group>"; };
 		3533194D1FC2BAB70089487F /* DungeonContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonContentView.h; sourceTree = "<group>"; };
 		3533194E1FC2BAB70089487F /* DungeonContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonContentView.m; sourceTree = "<group>"; };
+		353FF9731FE7CD2700A517F7 /* AnnihilationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnihilationModel.h; sourceTree = "<group>"; };
+		353FF9741FE7CD2700A517F7 /* AnnihilationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnihilationModel.m; sourceTree = "<group>"; };
+		353FF9761FE7E43A00A517F7 /* AnnihilationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnihilationView.h; sourceTree = "<group>"; };
+		353FF9771FE7E43A00A517F7 /* AnnihilationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnihilationView.m; sourceTree = "<group>"; };
 		3553C1551FBC428D00A3BEA8 /* DungeonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonTableViewCell.h; sourceTree = "<group>"; };
 		3553C1561FBC428D00A3BEA8 /* DungeonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonTableViewCell.m; sourceTree = "<group>"; };
 		3553C29A1FBEC824004450B0 /* DungeonContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonContentController.h; sourceTree = "<group>"; };
@@ -494,6 +500,8 @@
 			children = (
 				B75540D91FE37C1600D36269 /* AnnihilationCellModel.h */,
 				B75540DA1FE37C1600D36269 /* AnnihilationCellModel.m */,
+				353FF9731FE7CD2700A517F7 /* AnnihilationModel.h */,
+				353FF9741FE7CD2700A517F7 /* AnnihilationModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -503,6 +511,8 @@
 			children = (
 				B75540D61FE3757400D36269 /* AnnihilationCell.h */,
 				B75540D71FE3757400D36269 /* AnnihilationCell.m */,
+				353FF9761FE7E43A00A517F7 /* AnnihilationView.h */,
+				353FF9771FE7E43A00A517F7 /* AnnihilationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -841,6 +851,7 @@
 			files = (
 				3553C29C1FBEC824004450B0 /* DungeonContentController.m in Sources */,
 				3533194F1FC2BAB70089487F /* DungeonContentView.m in Sources */,
+				353FF9751FE7CD2700A517F7 /* AnnihilationModel.m in Sources */,
 				3501EB9F1FBAC56600489919 /* UIAlertController+Color.m in Sources */,
 				3564A95A1FBAB2FA00A49800 /* main.m in Sources */,
 				35F0815C1FCBC21E00215F6A /* DungeonBossView.m in Sources */,
@@ -856,6 +867,7 @@
 				3501EB971FBAC56600489919 /* UIButton+XCHelperBlock.m in Sources */,
 				3553C1571FBC428D00A3BEA8 /* DungeonTableViewCell.m in Sources */,
 				3501EB9A1FBAC56600489919 /* NSString+XCHelper.m in Sources */,
+				353FF9781FE7E43A00A517F7 /* AnnihilationView.m in Sources */,
 				3501EB961FBAC56600489919 /* UIImage+Category.m in Sources */,
 				3501EB901FBAC56600489919 /* XCNormalHeader.m in Sources */,
 				3533194C1FC2BA350089487F /* DungeonContentModel.m in Sources */,
