@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AnnihilationCellModel : NSObject
-@property(nonatomic, assign) NSInteger *id;
+@property(nonatomic, assign) int id;
 @property(nonatomic, strong)NSString *name;
 @property(nonatomic, strong)NSString *icon;
 @property(nonatomic, strong)NSString *level;

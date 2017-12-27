@@ -28,8 +28,13 @@
 		3501EB9F1FBAC56600489919 /* UIAlertController+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501EB851FBAC56600489919 /* UIAlertController+Color.m */; };
 		3501EBA01FBAC56600489919 /* UITableView+XCPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501EB8B1FBAC56600489919 /* UITableView+XCPlaceholderView.m */; };
 		3501EBA11FBAC56600489919 /* NSObject+XCMethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501EB8C1FBAC56600489919 /* NSObject+XCMethodSwizzle.m */; };
+		35128BE51FF0E7AB00B75703 /* OccupationContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35128BE41FF0E7AB00B75703 /* OccupationContentController.m */; };
+		35128BE81FF0EF5C00B75703 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35128BE71FF0EF5C00B75703 /* HeaderView.m */; };
+		35149B261FF37B3C0082F51D /* CollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35149B251FF37B3C0082F51D /* CollectionCellModel.m */; };
+		35149B291FF37B5B0082F51D /* ProductionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35149B281FF37B5B0082F51D /* ProductionCell.m */; };
 		351EF0971FD0EAD100A1404D /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351EF0961FD0EAD100A1404D /* ItemViewController.m */; };
 		351EF09A1FD0F8F800A1404D /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 351EF0991FD0F8F800A1404D /* ItemView.m */; };
+		351F48EC1FF1FABF00BBC6BB /* OccupationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 351F48EB1FF1FABF00BBC6BB /* OccupationTableViewCell.m */; };
 		3533194C1FC2BA350089487F /* DungeonContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533194B1FC2BA350089487F /* DungeonContentModel.m */; };
 		3533194F1FC2BAB70089487F /* DungeonContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533194E1FC2BAB70089487F /* DungeonContentView.m */; };
 		353FF9751FE7CD2700A517F7 /* AnnihilationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353FF9741FE7CD2700A517F7 /* AnnihilationModel.m */; };
@@ -43,8 +48,15 @@
 		3564A95A1FBAB2FA00A49800 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3564A9591FBAB2FA00A49800 /* main.m */; };
 		3564A9641FBAB2FA00A49800 /* FF14RaidersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3564A9631FBAB2FA00A49800 /* FF14RaidersTests.m */; };
 		3564A96F1FBAB2FA00A49800 /* FF14RaidersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3564A96E1FBAB2FA00A49800 /* FF14RaidersUITests.m */; };
+		35861C221FF3AE4600C5F809 /* ProductionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35861C211FF3AE4600C5F809 /* ProductionHeaderView.m */; };
+		358799F01FECCEEC0073A57D /* OccupationContentController.m.bak in Sources */ = {isa = PBXBuildFile; fileRef = 358799EF1FECCEEC0073A57D /* OccupationContentController.m.bak */; };
+		358799F31FECFDA60073A57D /* ContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 358799F21FECFDA60073A57D /* ContentModel.m */; };
+		358799F61FED0D8C0073A57D /* OccupationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358799F51FED0D8C0073A57D /* OccupationView.m */; };
 		3588D12A1FC9B37D0084F71B /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3588D1291FC9B37D0084F71B /* BaseNetworking.m */; };
 		35A382EC1FC5056100246AB3 /* DungeonBossModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A382EB1FC5056100246AB3 /* DungeonBossModel.m */; };
+		35B309EB1FEB7EB400BCD8C9 /* OccupationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B309EA1FEB7EB400BCD8C9 /* OccupationModel.m */; };
+		35B309EE1FEB90C400BCD8C9 /* OccupationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B309ED1FEB90C400BCD8C9 /* OccupationCell.m */; };
+		35B309F11FEBA13800BCD8C9 /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B309F01FEBA13800BCD8C9 /* CollectionHeaderView.m */; };
 		35C934061FBD8D9900675D06 /* DungeonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C934051FBD8D9900675D06 /* DungeonModel.m */; };
 		35EE63CF1FCF9D29000A7DBA /* ItemsCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE63CE1FCF9D29000A7DBA /* ItemsCollectionController.m */; };
 		35EE63D21FCF9D41000A7DBA /* ItemsCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE63D11FCF9D41000A7DBA /* ItemsCollectionCell.m */; };
@@ -122,10 +134,20 @@
 		3501EB8A1FBAC56600489919 /* UIButton+timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+timer.h"; sourceTree = "<group>"; };
 		3501EB8B1FBAC56600489919 /* UITableView+XCPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XCPlaceholderView.m"; sourceTree = "<group>"; };
 		3501EB8C1FBAC56600489919 /* NSObject+XCMethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XCMethodSwizzle.m"; sourceTree = "<group>"; };
+		35128BE31FF0E7AB00B75703 /* OccupationContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OccupationContentController.h; sourceTree = "<group>"; };
+		35128BE41FF0E7AB00B75703 /* OccupationContentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OccupationContentController.m; sourceTree = "<group>"; };
+		35128BE61FF0EF5C00B75703 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		35128BE71FF0EF5C00B75703 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		35149B241FF37B3C0082F51D /* CollectionCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCellModel.h; sourceTree = "<group>"; };
+		35149B251FF37B3C0082F51D /* CollectionCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionCellModel.m; sourceTree = "<group>"; };
+		35149B271FF37B5B0082F51D /* ProductionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionCell.h; sourceTree = "<group>"; };
+		35149B281FF37B5B0082F51D /* ProductionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionCell.m; sourceTree = "<group>"; };
 		351EF0951FD0EAD100A1404D /* ItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
 		351EF0961FD0EAD100A1404D /* ItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		351EF0981FD0F8F800A1404D /* ItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
 		351EF0991FD0F8F800A1404D /* ItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
+		351F48EA1FF1FABF00BBC6BB /* OccupationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OccupationTableViewCell.h; sourceTree = "<group>"; };
+		351F48EB1FF1FABF00BBC6BB /* OccupationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OccupationTableViewCell.m; sourceTree = "<group>"; };
 		3533194A1FC2BA350089487F /* DungeonContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonContentModel.h; sourceTree = "<group>"; };
 		3533194B1FC2BA350089487F /* DungeonContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonContentModel.m; sourceTree = "<group>"; };
 		3533194D1FC2BAB70089487F /* DungeonContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonContentView.h; sourceTree = "<group>"; };
@@ -152,10 +174,24 @@
 		3564A96A1FBAB2FA00A49800 /* FF14RaidersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF14RaidersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3564A96E1FBAB2FA00A49800 /* FF14RaidersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FF14RaidersUITests.m; sourceTree = "<group>"; };
 		3564A9701FBAB2FA00A49800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35861C201FF3AE4600C5F809 /* ProductionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionHeaderView.h; sourceTree = "<group>"; };
+		35861C211FF3AE4600C5F809 /* ProductionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionHeaderView.m; sourceTree = "<group>"; };
+		358799EE1FECCEEC0073A57D /* OccupationContentController.h.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = OccupationContentController.h.bak; sourceTree = "<group>"; };
+		358799EF1FECCEEC0073A57D /* OccupationContentController.m.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = OccupationContentController.m.bak; sourceTree = "<group>"; };
+		358799F11FECFDA60073A57D /* ContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentModel.h; sourceTree = "<group>"; };
+		358799F21FECFDA60073A57D /* ContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentModel.m; sourceTree = "<group>"; };
+		358799F41FED0D8C0073A57D /* OccupationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OccupationView.h; sourceTree = "<group>"; };
+		358799F51FED0D8C0073A57D /* OccupationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OccupationView.m; sourceTree = "<group>"; };
 		3588D1281FC9B37D0084F71B /* BaseNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNetworking.h; sourceTree = "<group>"; };
 		3588D1291FC9B37D0084F71B /* BaseNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNetworking.m; sourceTree = "<group>"; };
 		35A382EA1FC5056100246AB3 /* DungeonBossModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonBossModel.h; sourceTree = "<group>"; };
 		35A382EB1FC5056100246AB3 /* DungeonBossModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonBossModel.m; sourceTree = "<group>"; };
+		35B309E91FEB7EB400BCD8C9 /* OccupationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OccupationModel.h; sourceTree = "<group>"; };
+		35B309EA1FEB7EB400BCD8C9 /* OccupationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OccupationModel.m; sourceTree = "<group>"; };
+		35B309EC1FEB90C400BCD8C9 /* OccupationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OccupationCell.h; sourceTree = "<group>"; };
+		35B309ED1FEB90C400BCD8C9 /* OccupationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OccupationCell.m; sourceTree = "<group>"; };
+		35B309EF1FEBA13800BCD8C9 /* CollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderView.h; sourceTree = "<group>"; };
+		35B309F01FEBA13800BCD8C9 /* CollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderView.m; sourceTree = "<group>"; };
 		35C934041FBD8D9900675D06 /* DungeonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonModel.h; sourceTree = "<group>"; };
 		35C934051FBD8D9900675D06 /* DungeonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonModel.m; sourceTree = "<group>"; };
 		35EE63CD1FCF9D29000A7DBA /* ItemsCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsCollectionController.h; sourceTree = "<group>"; };
@@ -235,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				3501EB631FBAC56600489919 /* XCNormalFooter.m */,
+				3501EB6F1FBAC56600489919 /* BaseViewController.h */,
 				3501EB641FBAC56600489919 /* BaseViewController.m */,
 				3501EB651FBAC56600489919 /* BaseTabBarController.h */,
 				3501EB6C1FBAC56600489919 /* BaseTabBarController.m */,
@@ -246,7 +283,6 @@
 				3501EB6B1FBAC56600489919 /* BaseNavigationController.h */,
 				3501EB6D1FBAC56600489919 /* MBProgressHUD.bundle */,
 				3501EB6E1FBAC56600489919 /* XCNormalFooter.h */,
-				3501EB6F1FBAC56600489919 /* BaseViewController.h */,
 			);
 			path = CommonClass;
 			sourceTree = "<group>";
@@ -261,6 +297,7 @@
 				3501EB751FBAC56600489919 /* UIAlertController+Color.h */,
 				3501EB761FBAC56600489919 /* UIImage+Category.m */,
 				3501EB771FBAC56600489919 /* UIView+XCHelper.h */,
+				3501EB871FBAC56600489919 /* UIButton+XCHelperBlock.h */,
 				3501EB781FBAC56600489919 /* UIButton+XCHelperBlock.m */,
 				3501EB791FBAC56600489919 /* UIView+Layout.m */,
 				3501EB7A1FBAC56600489919 /* NSObject+XCMethodSwizzle.h */,
@@ -276,7 +313,6 @@
 				3501EB841FBAC56600489919 /* UIImage+Category.h */,
 				3501EB851FBAC56600489919 /* UIAlertController+Color.m */,
 				3501EB861FBAC56600489919 /* UIView+Layout.h */,
-				3501EB871FBAC56600489919 /* UIButton+XCHelperBlock.h */,
 				3501EB881FBAC56600489919 /* NSArray+SafeExtension.h */,
 				3501EB891FBAC56600489919 /* NSString+XCHelper.h */,
 				3501EB8A1FBAC56600489919 /* UIButton+timer.h */,
@@ -286,6 +322,54 @@
 				3588D1291FC9B37D0084F71B /* BaseNetworking.m */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		35149B221FF3504A0082F51D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35149B271FF37B5B0082F51D /* ProductionCell.h */,
+				35149B281FF37B5B0082F51D /* ProductionCell.m */,
+				35861C201FF3AE4600C5F809 /* ProductionHeaderView.h */,
+				35861C211FF3AE4600C5F809 /* ProductionHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35149B231FF3504A0082F51D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35149B241FF37B3C0082F51D /* CollectionCellModel.h */,
+				35149B251FF37B3C0082F51D /* CollectionCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		352CB19B1FEA68BD007E2F86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35B309E91FEB7EB400BCD8C9 /* OccupationModel.h */,
+				35B309EA1FEB7EB400BCD8C9 /* OccupationModel.m */,
+				358799F11FECFDA60073A57D /* ContentModel.h */,
+				358799F21FECFDA60073A57D /* ContentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		352CB19C1FEA68BD007E2F86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35B309EC1FEB90C400BCD8C9 /* OccupationCell.h */,
+				35B309ED1FEB90C400BCD8C9 /* OccupationCell.m */,
+				35B309EF1FEBA13800BCD8C9 /* CollectionHeaderView.h */,
+				35B309F01FEBA13800BCD8C9 /* CollectionHeaderView.m */,
+				358799F41FED0D8C0073A57D /* OccupationView.h */,
+				358799F51FED0D8C0073A57D /* OccupationView.m */,
+				35128BE61FF0EF5C00B75703 /* HeaderView.h */,
+				35128BE71FF0EF5C00B75703 /* HeaderView.m */,
+				351F48EA1FF1FABF00BBC6BB /* OccupationTableViewCell.h */,
+				351F48EB1FF1FABF00BBC6BB /* OccupationTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3564A93E1FBAB2F900A49800 = {
@@ -433,8 +517,8 @@
 			isa = PBXGroup;
 			children = (
 				35F00E3B1FBAE6B3000B922A /* Controller */,
-				35F00E3C1FBAE6B3000B922A /* Model */,
-				35F00E3D1FBAE6B3000B922A /* View */,
+				352CB19B1FEA68BD007E2F86 /* Model */,
+				352CB19C1FEA68BD007E2F86 /* View */,
 			);
 			path = Occupation;
 			sourceTree = "<group>";
@@ -444,30 +528,20 @@
 			children = (
 				35F00E451FBAEA5B000B922A /* OccupationController.h */,
 				35F00E461FBAEA5B000B922A /* OccupationController.m */,
+				35128BE31FF0E7AB00B75703 /* OccupationContentController.h */,
+				35128BE41FF0E7AB00B75703 /* OccupationContentController.m */,
+				358799EE1FECCEEC0073A57D /* OccupationContentController.h.bak */,
+				358799EF1FECCEEC0073A57D /* OccupationContentController.m.bak */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		35F00E3C1FBAE6B3000B922A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		35F00E3D1FBAE6B3000B922A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		35F00E3E1FBAE6B3000B922A /* Production */ = {
 			isa = PBXGroup;
 			children = (
 				35F00E3F1FBAE6B3000B922A /* Controller */,
-				35F00E401FBAE6B3000B922A /* Model */,
-				35F00E411FBAE6B3000B922A /* View */,
+				35149B231FF3504A0082F51D /* Model */,
+				35149B221FF3504A0082F51D /* View */,
 			);
 			path = Production;
 			sourceTree = "<group>";
@@ -479,20 +553,6 @@
 				35F00E491FBAEA90000B922A /* ProductionController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		35F00E401FBAE6B3000B922A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		35F00E411FBAE6B3000B922A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B75540D41FE3754D00D36269 /* Model */ = {
@@ -854,26 +914,36 @@
 				353FF9751FE7CD2700A517F7 /* AnnihilationModel.m in Sources */,
 				3501EB9F1FBAC56600489919 /* UIAlertController+Color.m in Sources */,
 				3564A95A1FBAB2FA00A49800 /* main.m in Sources */,
+				35B309F11FEBA13800BCD8C9 /* CollectionHeaderView.m in Sources */,
 				35F0815C1FCBC21E00215F6A /* DungeonBossView.m in Sources */,
+				358799F61FED0D8C0073A57D /* OccupationView.m in Sources */,
 				35F00E4A1FBAEA90000B922A /* ProductionController.m in Sources */,
 				35EE63CF1FCF9D29000A7DBA /* ItemsCollectionController.m in Sources */,
 				35A382EC1FC5056100246AB3 /* DungeonBossModel.m in Sources */,
+				35149B261FF37B3C0082F51D /* CollectionCellModel.m in Sources */,
 				35EE63D51FCFCF16000A7DBA /* ItemModel.m in Sources */,
+				35B309EE1FEB90C400BCD8C9 /* OccupationCell.m in Sources */,
 				B75540DB1FE37C1600D36269 /* AnnihilationCellModel.m in Sources */,
+				35149B291FF37B5B0082F51D /* ProductionCell.m in Sources */,
 				3501EB8E1FBAC56600489919 /* BaseViewController.m in Sources */,
 				3501EB9D1FBAC56600489919 /* UICollectionView+XCPlaceholderView.m in Sources */,
 				B75540D81FE3757400D36269 /* AnnihilationCell.m in Sources */,
+				351F48EC1FF1FABF00BBC6BB /* OccupationTableViewCell.m in Sources */,
 				35EE63D21FCF9D41000A7DBA /* ItemsCollectionCell.m in Sources */,
 				3501EB971FBAC56600489919 /* UIButton+XCHelperBlock.m in Sources */,
 				3553C1571FBC428D00A3BEA8 /* DungeonTableViewCell.m in Sources */,
 				3501EB9A1FBAC56600489919 /* NSString+XCHelper.m in Sources */,
+				35861C221FF3AE4600C5F809 /* ProductionHeaderView.m in Sources */,
 				353FF9781FE7E43A00A517F7 /* AnnihilationView.m in Sources */,
 				3501EB961FBAC56600489919 /* UIImage+Category.m in Sources */,
 				3501EB901FBAC56600489919 /* XCNormalHeader.m in Sources */,
 				3533194C1FC2BA350089487F /* DungeonContentModel.m in Sources */,
+				35128BE51FF0E7AB00B75703 /* OccupationContentController.m in Sources */,
+				35B309EB1FEB7EB400BCD8C9 /* OccupationModel.m in Sources */,
 				3501EB981FBAC56600489919 /* UIView+Layout.m in Sources */,
 				35F00E471FBAEA5B000B922A /* OccupationController.m in Sources */,
 				3501EB9C1FBAC56600489919 /* UILabel+XCHelper.m in Sources */,
+				358799F01FECCEEC0073A57D /* OccupationContentController.m.bak in Sources */,
 				351EF09A1FD0F8F800A1404D /* ItemView.m in Sources */,
 				3501EB8D1FBAC56600489919 /* XCNormalFooter.m in Sources */,
 				3501EB9E1FBAC56600489919 /* UIView+XCHelper.m in Sources */,
@@ -882,9 +952,11 @@
 				3501EB9B1FBAC56600489919 /* NSArray+SafeExtension.m in Sources */,
 				3588D12A1FC9B37D0084F71B /* BaseNetworking.m in Sources */,
 				3501EB941FBAC56600489919 /* FLAnimatedImageView+WebCache.m in Sources */,
+				35128BE81FF0EF5C00B75703 /* HeaderView.m in Sources */,
 				35F00E351FBAD21E000B922A /* DungeonViewController.m in Sources */,
 				3501EBA11FBAC56600489919 /* NSObject+XCMethodSwizzle.m in Sources */,
 				3501EB951FBAC56600489919 /* UIView+XCCornerRadius.m in Sources */,
+				358799F31FECFDA60073A57D /* ContentModel.m in Sources */,
 				351EF0971FD0EAD100A1404D /* ItemViewController.m in Sources */,
 				35C934061FBD8D9900675D06 /* DungeonModel.m in Sources */,
 				3564A94C1FBAB2FA00A49800 /* AppDelegate.m in Sources */,
@@ -1061,11 +1133,12 @@
 				DEVELOPMENT_TEAM = RD7J4DU62A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FF14Raiders/PrefixHeader.pch";
 				INFOPLIST_FILE = FF14Raiders/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hejianxin.FF14Raiders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1079,11 +1152,12 @@
 				DEVELOPMENT_TEAM = RD7J4DU62A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FF14Raiders/PrefixHeader.pch";
 				INFOPLIST_FILE = FF14Raiders/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hejianxin.FF14Raiders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

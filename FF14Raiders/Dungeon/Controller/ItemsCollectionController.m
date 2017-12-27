@@ -24,14 +24,11 @@ static NSString * const reuseIdentifier = @"Cell";
     if(!IsStrEmpty(self.name)){
         [self getJSON];
     }
-    
     [self initCollectionView];
     [MBProgressHUD showLoading:self.view];
-    // Do any additional setup after loading the view.
 }
 -(void)getJSON
 {
-    
     NSString *url = [NSString stringWithFormat:@"%@api/getbossitems/%@",APP_URL,self.name];
     NSString *path = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -141,7 +138,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"点击了第%ld个CELL",(long)indexPath.row);
     ItemModel *model = self.itemsModels[indexPath.row];
     ItemViewController *vc = [ItemViewController new];
     vc.id = model.id;

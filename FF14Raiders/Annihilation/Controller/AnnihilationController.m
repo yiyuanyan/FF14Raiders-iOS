@@ -105,7 +105,7 @@
 {
     AnnihilationContentController *vc = [AnnihilationContentController new];
     AnnihilationCellModel *model = self.modelArray[indexPath.row];
-    vc.id = model.id;
+    vc.id = (int)model.id;
     vc.name = model.name;
     self.navigationController.navigationBar.hidden = NO;
     [self.navigationController pushViewController:vc animated:YES];

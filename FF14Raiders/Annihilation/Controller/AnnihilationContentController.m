@@ -9,8 +9,10 @@
 #import "AnnihilationContentController.h"
 #import "AnnihilationModel.h"
 #import "AnnihilationView.h"
-@interface AnnihilationContentController ()
+@interface AnnihilationContentController ()<UIScrollViewDelegate>
 @property(nonatomic, strong) NSArray *modelArray;
+@property(nonatomic, strong)AnnihilationView *AnView;
+@property(nonatomic, strong) UIWebView *webView;
 @end
 
 @implementation AnnihilationContentController
@@ -24,6 +26,7 @@
 -(void)getJSON{
     [MBProgressHUD showLoading:self.view];
     NSString *url = [NSString stringWithFormat:@"%@api/getcrusadeon/%d",APP_URL,self.id];
+    NSLog(@"%@",url);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
@@ -41,14 +44,25 @@
     }];
 }
 -(void)initView{
-    AnnihilationView *AnView = [[AnnihilationView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH(), SCREEN_HEIGHT())];
+    self.AnView = [[AnnihilationView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH(), SCREEN_HEIGHT())];
+    self.AnView.delegate = self;
+    self.AnView.scrollEnabled = YES;
     AnnihilationModel *m = self.modelArray[0];
-    AnView.model = m;
-    [self.view addSubview:AnView];
-    [AnView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.AnView.model = m;
+    [self.view addSubview:self.AnView];
+    [self.AnView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
         make.top.equalTo(self.view).with.offset(64);
     }];
+    [self.AnView layoutIfNeeded];
+    float h = self.AnView.lineV.frame.origin.y + 20;
+    NSLog(@"%f",h);
+    self.AnView.contentSize = CGSizeMake(0, h);
+    self.AnView.delegateSignal = [RACSubject subject];
+    [self.AnView.delegateSignal subscribeNext:^(id x) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:m.video_path]];
+    }];
+    
     
 }
 -(void)setNavigation{
@@ -73,7 +87,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 /*
 #pragma mark - Navigation
 
