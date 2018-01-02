@@ -49,10 +49,13 @@
 		3564A9641FBAB2FA00A49800 /* FF14RaidersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3564A9631FBAB2FA00A49800 /* FF14RaidersTests.m */; };
 		3564A96F1FBAB2FA00A49800 /* FF14RaidersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3564A96E1FBAB2FA00A49800 /* FF14RaidersUITests.m */; };
 		35861C221FF3AE4600C5F809 /* ProductionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35861C211FF3AE4600C5F809 /* ProductionHeaderView.m */; };
-		358799F01FECCEEC0073A57D /* OccupationContentController.m.bak in Sources */ = {isa = PBXBuildFile; fileRef = 358799EF1FECCEEC0073A57D /* OccupationContentController.m.bak */; };
 		358799F31FECFDA60073A57D /* ContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 358799F21FECFDA60073A57D /* ContentModel.m */; };
 		358799F61FED0D8C0073A57D /* OccupationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358799F51FED0D8C0073A57D /* OccupationView.m */; };
 		3588D12A1FC9B37D0084F71B /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3588D1291FC9B37D0084F71B /* BaseNetworking.m */; };
+		3589996A1FF4E043005DA43B /* ProductionContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358999691FF4E043005DA43B /* ProductionContentController.m */; };
+		3589996D1FF4E152005DA43B /* ProductionTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589996C1FF4E152005DA43B /* ProductionTableHeaderView.m */; };
+		358999701FF4E168005DA43B /* ProductionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589996F1FF4E168005DA43B /* ProductionTableViewCell.m */; };
+		358999731FF4F2B8005DA43B /* ProductionTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 358999721FF4F2B8005DA43B /* ProductionTableViewModel.m */; };
 		35A382EC1FC5056100246AB3 /* DungeonBossModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A382EB1FC5056100246AB3 /* DungeonBossModel.m */; };
 		35B309EB1FEB7EB400BCD8C9 /* OccupationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B309EA1FEB7EB400BCD8C9 /* OccupationModel.m */; };
 		35B309EE1FEB90C400BCD8C9 /* OccupationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B309ED1FEB90C400BCD8C9 /* OccupationCell.m */; };
@@ -176,14 +179,20 @@
 		3564A9701FBAB2FA00A49800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35861C201FF3AE4600C5F809 /* ProductionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionHeaderView.h; sourceTree = "<group>"; };
 		35861C211FF3AE4600C5F809 /* ProductionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionHeaderView.m; sourceTree = "<group>"; };
-		358799EE1FECCEEC0073A57D /* OccupationContentController.h.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = OccupationContentController.h.bak; sourceTree = "<group>"; };
-		358799EF1FECCEEC0073A57D /* OccupationContentController.m.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = OccupationContentController.m.bak; sourceTree = "<group>"; };
 		358799F11FECFDA60073A57D /* ContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentModel.h; sourceTree = "<group>"; };
 		358799F21FECFDA60073A57D /* ContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentModel.m; sourceTree = "<group>"; };
 		358799F41FED0D8C0073A57D /* OccupationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OccupationView.h; sourceTree = "<group>"; };
 		358799F51FED0D8C0073A57D /* OccupationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OccupationView.m; sourceTree = "<group>"; };
 		3588D1281FC9B37D0084F71B /* BaseNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNetworking.h; sourceTree = "<group>"; };
 		3588D1291FC9B37D0084F71B /* BaseNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNetworking.m; sourceTree = "<group>"; };
+		358999681FF4E043005DA43B /* ProductionContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionContentController.h; sourceTree = "<group>"; };
+		358999691FF4E043005DA43B /* ProductionContentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionContentController.m; sourceTree = "<group>"; };
+		3589996B1FF4E152005DA43B /* ProductionTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionTableHeaderView.h; sourceTree = "<group>"; };
+		3589996C1FF4E152005DA43B /* ProductionTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionTableHeaderView.m; sourceTree = "<group>"; };
+		3589996E1FF4E168005DA43B /* ProductionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionTableViewCell.h; sourceTree = "<group>"; };
+		3589996F1FF4E168005DA43B /* ProductionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionTableViewCell.m; sourceTree = "<group>"; };
+		358999711FF4F2B8005DA43B /* ProductionTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductionTableViewModel.h; sourceTree = "<group>"; };
+		358999721FF4F2B8005DA43B /* ProductionTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductionTableViewModel.m; sourceTree = "<group>"; };
 		35A382EA1FC5056100246AB3 /* DungeonBossModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DungeonBossModel.h; sourceTree = "<group>"; };
 		35A382EB1FC5056100246AB3 /* DungeonBossModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonBossModel.m; sourceTree = "<group>"; };
 		35B309E91FEB7EB400BCD8C9 /* OccupationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OccupationModel.h; sourceTree = "<group>"; };
@@ -331,6 +340,10 @@
 				35149B281FF37B5B0082F51D /* ProductionCell.m */,
 				35861C201FF3AE4600C5F809 /* ProductionHeaderView.h */,
 				35861C211FF3AE4600C5F809 /* ProductionHeaderView.m */,
+				3589996B1FF4E152005DA43B /* ProductionTableHeaderView.h */,
+				3589996C1FF4E152005DA43B /* ProductionTableHeaderView.m */,
+				3589996E1FF4E168005DA43B /* ProductionTableViewCell.h */,
+				3589996F1FF4E168005DA43B /* ProductionTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +353,8 @@
 			children = (
 				35149B241FF37B3C0082F51D /* CollectionCellModel.h */,
 				35149B251FF37B3C0082F51D /* CollectionCellModel.m */,
+				358999711FF4F2B8005DA43B /* ProductionTableViewModel.h */,
+				358999721FF4F2B8005DA43B /* ProductionTableViewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -530,8 +545,6 @@
 				35F00E461FBAEA5B000B922A /* OccupationController.m */,
 				35128BE31FF0E7AB00B75703 /* OccupationContentController.h */,
 				35128BE41FF0E7AB00B75703 /* OccupationContentController.m */,
-				358799EE1FECCEEC0073A57D /* OccupationContentController.h.bak */,
-				358799EF1FECCEEC0073A57D /* OccupationContentController.m.bak */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -551,6 +564,8 @@
 			children = (
 				35F00E481FBAEA90000B922A /* ProductionController.h */,
 				35F00E491FBAEA90000B922A /* ProductionController.m */,
+				358999681FF4E043005DA43B /* ProductionContentController.h */,
+				358999691FF4E043005DA43B /* ProductionContentController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -930,10 +945,12 @@
 				B75540D81FE3757400D36269 /* AnnihilationCell.m in Sources */,
 				351F48EC1FF1FABF00BBC6BB /* OccupationTableViewCell.m in Sources */,
 				35EE63D21FCF9D41000A7DBA /* ItemsCollectionCell.m in Sources */,
+				3589996D1FF4E152005DA43B /* ProductionTableHeaderView.m in Sources */,
 				3501EB971FBAC56600489919 /* UIButton+XCHelperBlock.m in Sources */,
 				3553C1571FBC428D00A3BEA8 /* DungeonTableViewCell.m in Sources */,
 				3501EB9A1FBAC56600489919 /* NSString+XCHelper.m in Sources */,
 				35861C221FF3AE4600C5F809 /* ProductionHeaderView.m in Sources */,
+				3589996A1FF4E043005DA43B /* ProductionContentController.m in Sources */,
 				353FF9781FE7E43A00A517F7 /* AnnihilationView.m in Sources */,
 				3501EB961FBAC56600489919 /* UIImage+Category.m in Sources */,
 				3501EB901FBAC56600489919 /* XCNormalHeader.m in Sources */,
@@ -943,10 +960,10 @@
 				3501EB981FBAC56600489919 /* UIView+Layout.m in Sources */,
 				35F00E471FBAEA5B000B922A /* OccupationController.m in Sources */,
 				3501EB9C1FBAC56600489919 /* UILabel+XCHelper.m in Sources */,
-				358799F01FECCEEC0073A57D /* OccupationContentController.m.bak in Sources */,
 				351EF09A1FD0F8F800A1404D /* ItemView.m in Sources */,
 				3501EB8D1FBAC56600489919 /* XCNormalFooter.m in Sources */,
 				3501EB9E1FBAC56600489919 /* UIView+XCHelper.m in Sources */,
+				358999701FF4E168005DA43B /* ProductionTableViewCell.m in Sources */,
 				3501EBA01FBAC56600489919 /* UITableView+XCPlaceholderView.m in Sources */,
 				3501EB921FBAC56600489919 /* BaseTabBarController.m in Sources */,
 				3501EB9B1FBAC56600489919 /* NSArray+SafeExtension.m in Sources */,
@@ -958,6 +975,7 @@
 				3501EB951FBAC56600489919 /* UIView+XCCornerRadius.m in Sources */,
 				358799F31FECFDA60073A57D /* ContentModel.m in Sources */,
 				351EF0971FD0EAD100A1404D /* ItemViewController.m in Sources */,
+				358999731FF4F2B8005DA43B /* ProductionTableViewModel.m in Sources */,
 				35C934061FBD8D9900675D06 /* DungeonModel.m in Sources */,
 				3564A94C1FBAB2FA00A49800 /* AppDelegate.m in Sources */,
 				3501EB991FBAC56600489919 /* UIButton+timer.m in Sources */,

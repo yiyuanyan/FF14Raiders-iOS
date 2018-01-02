@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ProductionHeaderView : UICollectionReusableView
-
+@property(nonatomic, strong) UILabel *titleLabel;
 @end

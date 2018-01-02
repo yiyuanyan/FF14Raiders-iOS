@@ -10,6 +10,7 @@
 #import "CollectionCellModel.h"
 #import "ProductionHeaderView.h"
 #import "ProductionCell.h"
+#import "ProductionContentController.h"
 @interface ProductionController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic, strong) NSArray *modelArray;
 @property(nonatomic, strong) UIImageView *topImage;
@@ -24,8 +25,7 @@ static NSString * const reuseIdentifier = @"myCell";
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
     self.view.backgroundColor = UICOLOR_FROM_HEX(0x0e1821);
-    [self builTopImage];
-    [self builCollectionView];
+    
     [self getJSON];
 }
 -(void)builCollectionView
@@ -73,6 +73,8 @@ static NSString * const reuseIdentifier = @"myCell";
 
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if([responseObject[@"status"] intValue] == 1){
+            [self builTopImage];
+            [self builCollectionView];
             NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",APP_URL,responseObject[@"category"]]];
             [self.topImage sd_setImageWithURL:url];
             [self.topImage layoutIfNeeded];
@@ -113,7 +115,12 @@ static NSString * const reuseIdentifier = @"myCell";
     UICollectionReusableView *reusableView = nil;
     if(kind == UICollectionElementKindSectionHeader){
         ProductionHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:identifierCollectionHeader forIndexPath:indexPath];
-        
+        NSLog(@"%ld",(long)indexPath.section);
+        if(indexPath.section == 0){
+            header.titleLabel.text = @"能工巧匠";
+        }else if(indexPath.section == 1){
+            header.titleLabel.text = @"大地使者";
+        }
         reusableView = header;
     }
     if (kind == UICollectionElementKindSectionFooter)
@@ -122,6 +129,7 @@ static NSString * const reuseIdentifier = @"myCell";
         //footerview.backgroundColor = [UIColor purpleColor];
         reusableView = footerview;
     }
+    [reusableView layoutIfNeeded];
     return reusableView;
 }
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -136,10 +144,39 @@ static NSString * const reuseIdentifier = @"myCell";
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"myCell" forIndexPath:indexPath];
-    if(cell == nil){
-        cell = [[UICollectionViewCell alloc] init];
-    }
+    ProductionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    [cell.layer setMasksToBounds:YES];
+    [cell.layer setCornerRadius:6.0f];
+    CollectionCellModel *model = self.modelArray[indexPath.section][indexPath.row];
+    cell.model = model;
     return cell;
+}
+#pragma mark 定义CollectionViewCell与view的间距
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(10, 5, 10, 5);
+}
+#pragma makr 设置每个CELL的大小
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(SCREEN_WIDTH()/2 - 10, LineH(40));
+}
+#pragma mark 定义每个横向最小间距
+-(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 10;
+}
+-(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 10;
+}
+#pragma mark 点击事件
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    ProductionContentController *vc = [ProductionContentController new];
+    CollectionCellModel *model = self.modelArray[indexPath.section][indexPath.row];
+    vc.titleName = model.name;
+    vc.id = model.id;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CollectionCellModel.h"
 @interface ProductionCell : UICollectionViewCell
-
+@property(nonatomic, strong) CollectionCellModel *model;
 @end

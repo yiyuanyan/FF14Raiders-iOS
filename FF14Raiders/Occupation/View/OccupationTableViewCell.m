@@ -82,11 +82,12 @@
     self.fanweiLabel = [self builLabel];
     [self.contentView addSubview:self.fanweiLabel];
     [self.fanweiLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(LineW(25));
+        make.width.mas_equalTo(LineW(40));
         make.left.equalTo(self.juliLabel.mas_right).with.offset(5);
         make.centerY.equalTo(self.contentView.mas_centerY);
     }];
     self.xiaohaoLabel = [self builLabel];
+    self.xiaohaoLabel.backgroundColor = UICOLOR_RANDOM_COLOR();
     [self.contentView addSubview:self.xiaohaoLabel];
     [self.xiaohaoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(LineW(45));
